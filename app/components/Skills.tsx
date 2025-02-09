@@ -6,10 +6,16 @@ import ReactIcon from './icons/ReactIcon';
 import { Code } from './Code';
 import TailwindCSSIcon from './icons/TailwindCSSIcon';
 
-
 const Skills = () => {
   return (
-    <Section className="flex flex-col items-start gap-6">
+    // On ajoute "relative" pour que l'élément absolu se positionne correctement
+    <Section className="relative flex flex-col items-start gap-6">
+      {/* Gradient positionné sur le côté droit */}
+      <div
+        className="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[#22c55e] to-transparent opacity-30 pointer-events-none"
+        aria-hidden="true"
+      ></div>
+
       <Badge variant="outline">Compétences</Badge>
       <h2 className="pb-2 text-3xl font-semibold tracking-tight">
         J&apos;adore travailler sur...
@@ -17,7 +23,6 @@ const Skills = () => {
 
       {/* Conteneur des compétences */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-
         {/* Bloc Django */}
         <div className="flex flex-col items-start text-left">
           <span className="bg-accent text-accent-foreground p-4 rounded-sm">
@@ -47,7 +52,6 @@ const Skills = () => {
             j&apos;utilise des outils intégrés qui rendent le développement  
             rapide et efficace, que ce soit côté client ou côté serveur.
           </p>
-
         </div>
 
         {/* Bloc TailwindCSS */}
@@ -61,11 +65,9 @@ const Skills = () => {
             je peux concevoir rapidement des interfaces élégantes 
             et responsives qui complètent parfaitement mes projets, 
             qu&apos;ils soient développés en <Code>Django</Code> ou en front-end 
-            avec <Code>React</Code> et <Code>Next.js.</Code>
+            avec <Code>React</Code> et <Code>Next.js</Code>.
           </p>
         </div>
-
-        
       </div>
     </Section>
   );
