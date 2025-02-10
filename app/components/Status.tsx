@@ -11,13 +11,13 @@ const SIDE_PROJECTS: SideProjectProps[] = [
     Logo: NotepadText,
     title: "Invoice Management",
     description: "InVoice est une application web de gestion de factures développée avec Next.js et TypeScript.",
-    url: "/"
+    url: "https://invoice-management-indol.vercel.app/"
   },
   {
     Logo: NotepadTextDashedIcon,
     title: "Invoice CSV",
     description: "Ce projet est une application web permettant aux utilisateurs de télécharger des fichiers CSV ou Excel contenant des données de facturation.",
-    url: "/"
+    url: "https://github.com/Lyrecoph/invoice_project/"
   },
   {
     Logo: Tickets,

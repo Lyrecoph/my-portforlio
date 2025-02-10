@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 py-4">
       <Section className="flex items-center justify-between">
-        <h1 className="text-lg font-bold text-primary">Site sur lequel je me le portforlio</h1>
+        {/* <h1 className="text-lg font-bold text-primary">Site sur lequel je me le portforlio</h1> */}
         <ul className="flex items-center gap-2">
           <Link
             href="https://github.com/Lyrecoph"
