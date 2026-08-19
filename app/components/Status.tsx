@@ -1,12 +1,28 @@
 import React from 'react';
 import Section from './Section';
 import { Card } from '@/components/ui/card';
-import { NotepadText, NotepadTextDashedIcon, Tickets } from 'lucide-react';
+import { Globe2, Landmark, NotepadText, NotepadTextDashedIcon, Store, Tickets } from 'lucide-react';
 import { SideProject, SideProjectProps } from './SideProject';
 import { Work, WorkProps } from './Work';
 import { ContactCard } from './ContactCard';
 
 const SIDE_PROJECTS: SideProjectProps[] = [
+  {
+    Logo: Store,
+    title: "Plateforme e-commerce multi-vendeurs",
+    description: "API REST multi-vendeurs (Django 5 / DRF) en cours de développement : catalogue, boutiques, marchands, commandes, paiement mobile money via FedaPay, authentification JWT et OTP WhatsApp, documentation OpenAPI/Swagger.",
+  },
+  {
+    Logo: Landmark,
+    title: "Plateforme de Gestion des Primes Enseignantes (MEMP)",
+    description: "Plateforme nationale (Laravel 11 / React 18) pour le Ministère de l'Enseignement Maternel et Primaire du Bénin : calcul paramétrable des primes, workflow de validation et réconciliation multi-niveaux, module Paiements avec exports XLSX/PDF.",
+  },
+  {
+    Logo: Globe2,
+    title: "Gestion des Cadres d'Intervention ONG/PTF (GICI-ONG/PTF)",
+    description: "Plateforme (Laravel 12 / React 19) pour le Ministère de l'Enseignement Maternel et Primaire du Bénin : gestion des partenariats ONG/PTF, portail public avec cartographie interactive et back-office d'administration.",
+    url: "https://gicimemp.gouv.bj"
+  },
   {
     Logo: NotepadText,
     title: "Invoice Management",
@@ -28,6 +44,12 @@ const SIDE_PROJECTS: SideProjectProps[] = [
 ];
 
 const WORK: WorkProps[] = [
+  {
+    image: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><rect width='100' height='100' rx='16' fill='%230f172a'/><text x='50' y='58' font-family='Arial, sans-serif' font-size='30' font-weight='700' fill='%23ffffff' text-anchor='middle'>GIT</text></svg>",
+    title: "Global IT Net",
+    role: "Développeur web",
+    date: "2025 - 2026",
+  },
   {
     image: "GidLogo.png",
     title: "Gid Sarl",
